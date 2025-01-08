@@ -1,0 +1,305 @@
+[html | Структура HTML-файла]
+<html>
+  <head>
+    <title>|</title>
+  </head>
+  <body>
+    
+  </body>
+</html>
+
+[body | Тело документа]
+<body bgcolor=| text= link= alink= vlink=>
+
+</body>
+
+[head | Заголовок документа]
+<head>
+  <title>|</title>
+  <meta http-equiv="Content-Language" content="ru">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <meta name="author" content="">
+  <meta name="generator" content="Web Development Studio (http://delphiworld.narod.ru)">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="shortcut icon" type="image/x-icon" href="">
+</head>
+
+[linki | Иконка файла в избранном]
+<link rel="shortcut icon" type="image/x-icon" href="|">
+
+[link | Внешний файл CSS]
+<link rel="stylesheet" type="text/css" href="|">
+
+[meta | Meta-теги]
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="author" content="|">
+<meta name="generator" content="Web Development Studio (http://delphiworld.narod.ru)">
+<meta Name="keywords" Content="">
+<meta Name="description" Content="">
+
+[html_ | Полная структура HTML-файла]
+<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.0  Transitional//RU"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+  <head>
+    <title>|</title>
+    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <meta name="author" content="">
+    <meta name="generator" content="Web Development Studio (http://delphiworld.narod.ru)">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+  </head>
+  <body>
+
+  </body>
+</html>
+
+[-- | Комментарии HTML]
+<!-- | -->
+
+[!doct | Тип HTML 4.0 Transitional]
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//RU"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+|
+
+[!doctx | Тип XHTML 1.0 Transitional]
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//RU"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|
+
+[a | Гиперссылка]
+<a href="|"></a>
+
+[an | Гиперссылка в новом окне]
+<a target=_blank href="|"></a>
+
+[form | Web-форма]
+<form action="|" method=get>
+</form>
+
+[formi | Форма с компонентами]
+<form action="|" method=get>
+  <input name="" type=text>
+  <input type=submit>
+  <input type=reset>
+</form>
+
+[input | Компонент формы]
+<input name="|" type=text>
+
+[applet | Апплет]
+<applet code="|.class" width=100 height=100>
+  <param name="" value="">
+  <param name="" value="">
+</applet>
+
+[frameset | Набор фреймов]
+<frameset cols="30%,*">
+  <frame name="" src="|.html">
+  <frame name="" src=".html">
+</frameset>
+
+[img | Вставка изображения]
+<img src="|" alt="">
+
+[js | Вставка JavaScript]
+<script src="|.js" type="text/javascript" language="javascript"></script>
+
+[script | Скрипт]
+<script language="JavaScript" type="text/javascript">
+<!--
+  |
+//-->
+</script>
+
+[style | Каскадные стили]
+<style type="text/css">
+<!--
+  |
+//-->
+</style>
+
+[table | Таблица]
+<table cellspacing=0 cellpadding=0 width="100%">
+  <tr>
+    <td>|</td>
+  </tr>
+</table>
+
+[tableh | Таблица с заголовками]
+<table align="left" border=0 cellspacing=0 cellpadding=0 width="100%">
+  <tr align="left" valign="middle">
+    <th>|</th>
+    <th></th>
+  <tr align="left" valign=middle">
+    <td></td>
+    <td></td>
+</table>
+
+[tr | Новая строка]
+<tr>
+  <td>|</td>
+</tr>
+
+[td | Ячейка таблицы]
+<td>|</td>
+
+[ul | Маркерованный список]
+<ul type=square>
+  <li>|
+</ul>
+
+[ol | Нумерованный список]
+<ol>
+  <li>|
+</ol>
+
+[xml | XML Документ]
+<?xml version="1.0" encoding="windows-1251"?>
+|
+
+[xmlcss | XML Документ с CSS]
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/css" href="|"?>
+
+[perl | Perl Документ]
+#!/usr/bin/perl
+|
+
+[vrml | Vrml Документ]
+#VRML V2.0 utf8
+|
+
+[wml | Wml Документ]
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml_1.2.xml">
+|
+
+[curl | Curl Документ]
+{curl 1.6 applet}
+|
+
+[if | Условие]
+if (|)
+{
+
+}
+else
+{
+
+}
+
+[function | Функция function]
+function |()
+{
+
+}
+
+[sub | Функция sub]
+sub |
+{
+
+}
+
+[for | Цикл for]
+for ($|i = 0; $i < $n; $i++)
+{
+
+}
+
+[while | Цикл while]
+while (|)
+{
+
+}
+
+[do | Цикл do..while]
+do
+{
+
+}
+while (|);
+
+[switch | Выбор switch..case]
+switch ($|i)
+{
+  case 0:
+
+    break;
+  case 1:
+
+    break;
+  case 2:
+
+    break;
+}
+
+[print | Вывод строки print]
+print "|";
+
+[echo | Вывод строки echo]
+echo "|";
+
+[@mail | Отправить e-mail]
+@mail($|email, $subject, $message, "From: $from_email");
+
+[setcookie | Установить Cookie]
+setcookie ("|TestCookie", $value,time()+3600);  /* на 1 час */
+
+[mysql_connect | Подключение к MySQL]
+$link = mysql_connect("|mysql_host", "mysql_login", "mysql_password")
+  or die ("Could not connect to MySQL");
+
+mysql_select_db("my_database")
+  or die ("Could not select database");
+
+[mysql_query | Запрос MySQL]
+$query = "|SELECT * FROM my_table";
+$result = mysql_query($query)
+  or die("Query failed");
+
+// Вывод результата в HTML
+
+print "<table>\n";
+while ($line = mysql_fetch_array($result))
+{
+  print "\t<tr>\n";
+  while (list($col_name, $col_value) = each($line))
+  {
+    print "\t\t<td>$col_value</td>\n";
+  }
+  print "\t</tr>\n";
+}
+print "</table>\n";
+
+[mysql_close | Закрыть соединение MySQL]
+mysql_close($|link);
+
+[header | Заголовок - тип содержимого]
+Header("Content-type: |image/png");
+
+[h_location | Заголовок - перенаправление]
+Header("Location: http://|delphiworld.narod.ru/login.php");
+
+[fwrite | Запись в файл]
+$fp = fopen("|file.txt", "w+");
+fwrite($fp, "Test");
+fclose($fp);
+
+[fread | Чтение из файла]
+$fp = fopen("|file.txt", "r");
+$bytes = 4;
+$buffer = fread($fp, $bytes);
+fclose($fp);
+print $buffer;
+
+[{ | Скобки]
+{
+  |
+}

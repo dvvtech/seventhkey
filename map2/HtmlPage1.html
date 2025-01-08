@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">    
+<head>
+    <title></title>
+    <script src="map.js"></script>
+    <script src="events.js"></script>    
+    <script src="regions.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function () {
+            showMap('All');
+        });    
+    </script>
+    <style type="text/css">
+        canvas
+        {
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;            
+        }
+        #center {
+    width: 450px; /* Ширина элемента в пикселах */
+    padding: 10px; /* Поля вокруг текста */
+    margin: auto; /* Выравниваем по центру */
+    
+   }
+    </style>
+
+</head>
+<body>
+    <!--<label id="Label1" for="female11">X:</label>
+    <label id="Xcoord" for="female1"></label>
+    <label id="Label2" for="female22">Y:</label>    
+    <label id="Ycoord" for="female2"></label><br/>-->
+    <!--<button onclick="showMap('Gidromontazh')">ОАО "Гидроэлектромонтаж"</button>
+    <button onclick="showMap('Kama')">ООО "Камаэлектромонтаж"</button>
+    <button onclick="showMap('Prom')">ООО «НПО «Промэнергосервис»</button>
+    <button onclick="showMap('Gidromontazh2')">ООО "БМУ Гидроэлектромонтаж"</button>
+    <button onclick="showMap('Amur')">ООО «Амурэлектрощит»</button>
+    <button onclick="showMap('Sibir')">ОАО "ГЭМ -Сибирь"</button>-->
+    <canvas id="myCanvas" width="700" height="400"></canvas>
+    <div  id="center">
+    <!--<label id="Label3" for="female23">MouseOut</label>
+    <label id="mouseOutL" for="female25"></label>
+    <span onclick="showMap('fgfg')">Компания десять</span>-->    
+    <label id="idCompanyName" for="idCompanyName" style="display:none"></label><br/>
+    <!--<label id="idDescription" for="idDescription" style="display:none"></label>-->
+    </div>
+</body>
+</html>
