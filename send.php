@@ -1,14 +1,14 @@
-<?php session_start();?>
+п»ї<?php session_start();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
-<title>OOО "Центр Альтернативной Психологии "Седьмой ключ"</title>
-<meta name="keywords" content="седьмой,ключ,альтернативная,психология,путь,счастью,счастье" />
-<meta name="description" content="седьмой ключ" />
-<meta property="og:title" content="Санкт-Петербургский Центр Альтернативной Психологии Седьмой ключ/>
+<title>OOРћ "Р¦РµРЅС‚СЂ РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅРѕР№ РџСЃРёС…РѕР»РѕРіРёРё "РЎРµРґСЊРјРѕР№ РєР»СЋС‡"</title>
+<meta name="keywords" content="СЃРµРґСЊРјРѕР№,РєР»СЋС‡,Р°Р»СЊС‚РµСЂРЅР°С‚РёРІРЅР°СЏ,РїСЃРёС…РѕР»РѕРіРёСЏ,РїСѓС‚СЊ,СЃС‡Р°СЃС‚СЊСЋ,СЃС‡Р°СЃС‚СЊРµ" />
+<meta name="description" content="СЃРµРґСЊРјРѕР№ РєР»СЋС‡" />
+<meta property="og:title" content="РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРіСЃРєРёР№ Р¦РµРЅС‚СЂ РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅРѕР№ РџСЃРёС…РѕР»РѕРіРёРё РЎРµРґСЊРјРѕР№ РєР»СЋС‡/>
 <meta property="og:url" content="http://www.seventhkey.ru/"/>
-<meta property="og:description" content="седьмой ключ"/>
+<meta property="og:description" content="СЃРµРґСЊРјРѕР№ РєР»СЋС‡"/>
 <link href="default.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="snow.js" charset="windows-1251"></script>
 <script type="text/javascript" src="JScript5.js"></script>
@@ -18,12 +18,12 @@
 <div id="header">
 	<div id="menu">
 		<ul>
-			<li class="current_page_item" ><a href="index.html">Главная</a></li>
-			<li><a href="news.html">Новости и события</a></li>
-			<li><a href="about.html">О нашем центре</a></li>
-			<li><a href="articles/main.html">Статьи</a></li>
-      <li><a href="harmonizers.html">Гармонизаторы</a></li>
-			<li><a href="poetry.html">Творчество</a></li>
+			<li class="current_page_item" ><a href="index.html">Р“Р»Р°РІРЅР°СЏ</a></li>
+			<li><a href="news.html">РќРѕРІРѕСЃС‚Рё Рё СЃРѕР±С‹С‚РёСЏ</a></li>
+			<li><a href="about.html">Рћ РЅР°С€РµРј С†РµРЅС‚СЂРµ</a></li>
+			<li><a href="articles/main.html">РЎС‚Р°С‚СЊРё</a></li>
+      <li><a href="harmonizers.html">Р“Р°СЂРјРѕРЅРёР·Р°С‚РѕСЂС‹</a></li>
+			<li><a href="poetry.html">РўРІРѕСЂС‡РµСЃС‚РІРѕ</a></li>
 		</ul>
 	</div>
 </div>
@@ -64,20 +64,20 @@
                     if ($message == '') unset($message);
                   }
 
-                  /* Проверяем заполнены ли все поля */
+                  /* РџСЂРѕРІРµСЂСЏРµРј Р·Р°РїРѕР»РЅРµРЅС‹ Р»Рё РІСЃРµ РїРѕР»СЏ */
                   if  (isset($name) && isset($email) && isset($message))
                   {
-                       /* Убираем все лишние пробелы и переносы строк, а также преобразуем  все теги HTML в  символы*/
+                       /* РЈР±РёСЂР°РµРј РІСЃРµ Р»РёС€РЅРёРµ РїСЂРѕР±РµР»С‹ Рё РїРµСЂРµРЅРѕСЃС‹ СЃС‚СЂРѕРє, Р° С‚Р°РєР¶Рµ РїСЂРµРѕР±СЂР°Р·СѓРµРј  РІСЃРµ С‚РµРіРё HTML РІ  СЃРёРјРІРѕР»С‹*/
 
                        $name =  htmlspecialchars(trim($name));
                        $email =  htmlspecialchars(trim($email));
                        $message =  htmlspecialchars(trim($message));
 
-                      /*  Проверяем правильность ввода email-адреса */
+                      /*  РџСЂРѕРІРµСЂСЏРµРј РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ РІРІРѕРґР° email-Р°РґСЂРµСЃР° */
 
                       if(!preg_match("/[0-9a-z_]+@[0-9a-z_^\.]+\.[a-z]{2,3}/i",  $email))
                       {
-                          die("Неправильный  формат e-mail адреса!");
+                          die("РќРµРїСЂР°РІРёР»СЊРЅС‹Р№  С„РѕСЂРјР°С‚ e-mail Р°РґСЂРµСЃР°!");
                       }
 
                       if (isset($_POST['pr']) && $_POST['pr'] == $_SESSION['keystring'])
@@ -86,39 +86,39 @@
                       }
                       else
                       {
-                        die("Неверно ввели цифровой код");
+                        die("РќРµРІРµСЂРЅРѕ РІРІРµР»Рё С†РёС„СЂРѕРІРѕР№ РєРѕРґ");
                       }
 
-                      /* Формируем сообщение */
+                      /* Р¤РѕСЂРјРёСЂСѓРµРј СЃРѕРѕР±С‰РµРЅРёРµ */
                       $address  = "dvv153m@gmail.com";//"mary@seventhkey.ru";
-                      $sub  = "Сообщение с моего нового сайта!!!";
-                      $mes  = "Автор назвался: $name  \nОставил такой E-mail: $email \nСодержание письма: \n$message";
+                      $sub  = "РЎРѕРѕР±С‰РµРЅРёРµ СЃ РјРѕРµРіРѕ РЅРѕРІРѕРіРѕ СЃР°Р№С‚Р°!!!";
+                      $mes  = "РђРІС‚РѕСЂ РЅР°Р·РІР°Р»СЃСЏ: $name  \nРћСЃС‚Р°РІРёР» С‚Р°РєРѕР№ E-mail: $email \nРЎРѕРґРµСЂР¶Р°РЅРёРµ РїРёСЃСЊРјР°: \n$message";
 
-                      /* Отправка  сообщения */
+                      /* РћС‚РїСЂР°РІРєР°  СЃРѕРѕР±С‰РµРЅРёСЏ */
                       $verify =  mail ($address,$sub,$mes,"Content-type:text/plain; charset = windows-1251\r\nFrom:$email");
                       if($verify == 'true')
                       {
-                          echo  "Сообщение отправлено";
+                          echo  "РЎРѕРѕР±С‰РµРЅРёРµ РѕС‚РїСЂР°РІР»РµРЅРѕ";
                       }
                       else
                       {
-                         echo  "Сообщение не отправлено!";
+                         echo  "РЎРѕРѕР±С‰РµРЅРёРµ РЅРµ РѕС‚РїСЂР°РІР»РµРЅРѕ!";
                       }
 
                   }
                   else
                   {
-                     echo  "Вы заполнили не все поля!";
+                     echo  "Р’С‹ Р·Р°РїРѕР»РЅРёР»Рё РЅРµ РІСЃРµ РїРѕР»СЏ!";
                   }
                 ?>
 
-      <div class="meta">  <!-- Не удалять иначе смещается меню-->
+      <div class="meta">  <!-- РќРµ СѓРґР°Р»СЏС‚СЊ РёРЅР°С‡Рµ СЃРјРµС‰Р°РµС‚СЃСЏ РјРµРЅСЋ-->
 			</div>
       </div>
 		</div>
 
     <!--<div class="post">
-       <h2 class="title">Интервью </h2>
+       <h2 class="title">РРЅС‚РµСЂРІСЊСЋ </h2>
 		</div>-->
 	</div>
 
@@ -127,20 +127,20 @@
 	<div id="sidebar">
 		<ul>
 			<li>
-        <h2>Ключ к счастью</h2>
+        <h2>РљР»СЋС‡ Рє СЃС‡Р°СЃС‚СЊСЋ</h2>
         <h3></h3>
-        <h2>Информация</h2>
+        <h2>РРЅС„РѕСЂРјР°С†РёСЏ</h2>
 				<ul>
-          <li><a href="response/people1.html">Отзывы пациентов</a></li>
-          <li><a href="response/scientific.html">Отзывы ученых</a></li>
-          <li><a href="partners.html">Партнеры</a></li>
-          <li><a href="contacts.php">Контакты</a></li>
+          <li><a href="response/people1.html">РћС‚Р·С‹РІС‹ РїР°С†РёРµРЅС‚РѕРІ</a></li>
+          <li><a href="response/scientific.html">РћС‚Р·С‹РІС‹ СѓС‡РµРЅС‹С…</a></li>
+          <li><a href="partners.html">РџР°СЂС‚РЅРµСЂС‹</a></li>
+          <li><a href="contacts.php">РљРѕРЅС‚Р°РєС‚С‹</a></li>
 				</ul>
 			</li>
 			<li>
-				<h2>Факты</h2>
+				<h2>Р¤Р°РєС‚С‹</h2>
 				<ul>
-					<li><a href="lines.html">Завиткообразные отпечатки</a></li>
+					<li><a href="lines.html">Р—Р°РІРёС‚РєРѕРѕР±СЂР°Р·РЅС‹Рµ РѕС‚РїРµС‡Р°С‚РєРё</a></li>
 				</ul>
 			</li>
 		</ul>

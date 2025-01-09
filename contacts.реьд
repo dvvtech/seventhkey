@@ -1,14 +1,14 @@
-<?php session_start();?>
+п»ї<?php session_start();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
-<title>OOО "Цент Альтернативной Психологии "Седьмой ключ"</title>
+<title>OOРћ "Р¦РµРЅС‚ РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅРѕР№ РџСЃРёС…РѕР»РѕРіРёРё "РЎРµРґСЊРјРѕР№ РєР»СЋС‡"</title>
 <meta name="keywords" content="" />
-<meta name="description" content="седьмой ключ, контакты" />
-<meta property="og:title" content="Санкт-Петербургский Центр Альтернативной Психологии Седьмой ключ/>
+<meta name="description" content="СЃРµРґСЊРјРѕР№ РєР»СЋС‡, РєРѕРЅС‚Р°РєС‚С‹" />
+<meta property="og:title" content="РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРіСЃРєРёР№ Р¦РµРЅС‚СЂ РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅРѕР№ РџСЃРёС…РѕР»РѕРіРёРё РЎРµРґСЊРјРѕР№ РєР»СЋС‡/>
 <meta property="og:url" content="http://www.seventhkey.ru/"/>
-<meta property="og:description" content="седьмой ключ"/>
+<meta property="og:description" content="СЃРµРґСЊРјРѕР№ РєР»СЋС‡"/>
 <link href="default.css" rel="stylesheet" type="text/css" />
 
 <script src="http://maps.google.com/maps?file=api&v=2.x&key=ABQIAAAAVHQ2elrT0cPBKax13yppPRT0np7WxnSXNl4QFXed2YLICSmkyRSuAfdxeqp8Pkn_l-x-Lbr2xR41Xg" type="text/javascript"></script>
@@ -43,12 +43,12 @@
 <div id="header">
 	<div id="menu">
 		<ul>
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="news.html">Новости и события</a></li>
-			<li><a href="about.html">О нашем центре</a></li>
-			<li><a href="articles/main.html">Статьи</a></li>
-			<li><a href="service.html">Услуги</a></li>
-      <li><a href="poetry.html">Творчество</a></li>
+			<li><a href="index.html">Р“Р»Р°РІРЅР°СЏ</a></li>
+			<li><a href="news.html">РќРѕРІРѕСЃС‚Рё Рё СЃРѕР±С‹С‚РёСЏ</a></li>
+			<li><a href="about.html">Рћ РЅР°С€РµРј С†РµРЅС‚СЂРµ</a></li>
+			<li><a href="articles/main.html">РЎС‚Р°С‚СЊРё</a></li>
+			<li><a href="service.html">РЈСЃР»СѓРіРё</a></li>
+      <li><a href="poetry.html">РўРІРѕСЂС‡РµСЃС‚РІРѕ</a></li>
 		</ul>
 	</div>
 </div>
@@ -64,50 +64,50 @@
 	<!-- start content -->
 	<div id="content">
 		<div class="post">
-			<h1 class="title">Контакты </h1>
+			<h1 class="title">РљРѕРЅС‚Р°РєС‚С‹ </h1>
 			<div class="entry">
 				<p>
            <br/>
-           Адрес: г. Санкт-Петербург, ул. Лёни Голикова, д.104 кв.12
+           РђРґСЂРµСЃ: Рі. РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі, СѓР». Р›С‘РЅРё Р“РѕР»РёРєРѕРІР°, Рґ.104 РєРІ.12
            <br/>
            e-mail: mary@seventhkey.ru
            <br/>
-           Дежурнюк Мария Сергеевна (директор)
+           Р”РµР¶СѓСЂРЅСЋРє РњР°СЂРёСЏ РЎРµСЂРіРµРµРІРЅР° (РґРёСЂРµРєС‚РѕСЂ)
            <br/>
-           тел. : +79215978459
+           С‚РµР». : +79215978459
            <br/>
-           Акулова Дарья Сергеевна (специалист по связям с общественностью)
+           РђРєСѓР»РѕРІР° Р”Р°СЂСЊСЏ РЎРµСЂРіРµРµРІРЅР° (СЃРїРµС†РёР°Р»РёСЃС‚ РїРѕ СЃРІСЏР·СЏРј СЃ РѕР±С‰РµСЃС‚РІРµРЅРЅРѕСЃС‚СЊСЋ)
            <br/>
-           тел. : +79215509865
+           С‚РµР». : +79215509865
            <br/>
            <br/>
            <div id="map" style="width: 500px; height: 312px"> </div>
            <br/><br/>
            
-          <h1 class="title">Обратная связь </h1>
+          <h1 class="title">РћР±СЂР°С‚РЅР°СЏ СЃРІСЏР·СЊ </h1>
 
            <form name="test" action="send.php" method="post" >
 
-           <p><b>Ваше имя:</b><br/>
+           <p><b>Р’Р°С€Рµ РёРјСЏ:</b><br/>
              <input name="name" type="text" size="40">
            </p><br/>
 
-           <p><b>Ваша почта:</b><br/>
+           <p><b>Р’Р°С€Р° РїРѕС‡С‚Р°:</b><br/>
              <input name="email" type="text" size="40">
            </p><br/>
 
-          <p><b>Сообщение:</b><br/>
+          <p><b>РЎРѕРѕР±С‰РµРЅРёРµ:</b><br/>
             <textarea name="message" cols="40" rows="3"></textarea>
           </p><br/>
 
-          <p>Введите числа с картинки: <br/>
+          <p>Р’РІРµРґРёС‚Рµ С‡РёСЃР»Р° СЃ РєР°СЂС‚РёРЅРєРё: <br/>
 
           <?php require 'captcha.php';?>
 
           <input name="pr" style=" margin-bottom:11px" type="text" size="6" maxlength="5"></p>
           <br/>
 
-          <p><input type="submit" value="Отправить">
+          <p><input type="submit" value="РћС‚РїСЂР°РІРёС‚СЊ">
 
           </form>
            
@@ -124,17 +124,17 @@
 			<li>
 				<h2></h2>
 				<ul>
-          <li><a href="response/people1.html">Отзывы пациентов</a></li>
-					<li><a href="response/scientific.html">Отзывы ученых</a></li>
-          <li><a href="partners.html">Партнеры</a></li>
-          <li><a href="contacts.php">Контакты</a></li>
+          <li><a href="response/people1.html">РћС‚Р·С‹РІС‹ РїР°С†РёРµРЅС‚РѕРІ</a></li>
+					<li><a href="response/scientific.html">РћС‚Р·С‹РІС‹ СѓС‡РµРЅС‹С…</a></li>
+          <li><a href="partners.html">РџР°СЂС‚РЅРµСЂС‹</a></li>
+          <li><a href="contacts.php">РљРѕРЅС‚Р°РєС‚С‹</a></li>
 				</ul>
 			</li>
 			<li>
-				<h2>Факты</h2>
+				<h2>Р¤Р°РєС‚С‹</h2>
 				<ul>
-					<li><a href="lines.html">Завиткообразные отпечатки</a></li>
-					<li><a href="photons.html">Движение фотонов</a></li>
+					<li><a href="lines.html">Р—Р°РІРёС‚РєРѕРѕР±СЂР°Р·РЅС‹Рµ РѕС‚РїРµС‡Р°С‚РєРё</a></li>
+					<li><a href="photons.html">Р”РІРёР¶РµРЅРёРµ С„РѕС‚РѕРЅРѕРІ</a></li>
 				</ul>
 			</li>
 		</ul>
