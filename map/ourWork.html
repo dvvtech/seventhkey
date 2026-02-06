@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <title>Школа Альтернативной Психологии. Работа с пространством.</title>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <title>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="../highslide/highslide-with-html.js"></script>
     <script type="text/javascript" src="marchWork.js"></script>
     <script type="text/javascript" src="aprilWork.js"></script>
@@ -16,42 +17,44 @@
 
     <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
     <style type="text/css">
-      body {
-        width:100%;
-        height:100%;
-        background-color:white;
-        margin: -10px 0 0 0
-      }
-      .float {
-        min-height:100%;
-        background-color:White;
-        position:relative;
-      }
-      .header {
-        width: 100%;
-        height: 40px;
-        background-color: #C9DFFF;
-     }
-     .yanmap
-     {
-       position: relative;
-       height:650px;
-     }
-     #controlTime
-		 {
-		    position:fixed;
-		    margin:0px 0 0 0;
-		    display: block;
-		    top:  55px;
-        right: 5px;
-  			padding: 0.7em;
-	   		background-color: rgba(230, 250, 253, 0.8);
-		  	border-radius: 7px;
-			  -webkit-box-shadow:0 0 10px #aaa;
-	      -moz-box-shadow:0 0 10px #aaa;
-	      box-shadow:0 0 10px #aaa;
-	      z-index:2;
-		}
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            margin: -10px 0 0 0
+        }
+
+        .float {
+            min-height: 100%;
+            background-color: White;
+            position: relative;
+        }
+
+        .header {
+            width: 100%;
+            height: 40px;
+            background-color: #C9DFFF;
+        }
+
+        .yanmap {
+            position: relative;
+            height: 650px;
+        }
+
+        #controlTime {
+            position: fixed;
+            margin: 0px 0 0 0;
+            display: block;
+            top: 55px;
+            right: 5px;
+            padding: 0.7em;
+            background-color: rgba(230, 250, 253, 0.8);
+            border-radius: 7px;
+            -webkit-box-shadow: 0 0 10px #aaa;
+            -moz-box-shadow: 0 0 10px #aaa;
+            box-shadow: 0 0 10px #aaa;
+            z-index: 2;
+        }
     </style>
     <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
     <script type="text/javascript">
@@ -70,84 +73,79 @@
             myCollection = new ymaps.GeoObjectCollection();
             updatePlaceMark(marchWork);
             myMap.controls.add('zoomControl').add('mapTools');
-            // Включим масштабирование колесом мыши
+            // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
             myMap.behaviors.enable('scrollZoom');
         }
 
         $(document).ready(function () {
-                        
+
             updateList("march");
         });
 
-        function updateList(subject)//обновление списка справа
+        function updateList(subject)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         {
             if (subject == "april") {
-         
+
                 var worksList = getDataApril();
                 var aprilList = getList(worksList);
                 document.getElementById('aprilWorkHighslide').innerHTML = aprilList;
             }
-            else if (subject == "march")
-            {
+            else if (subject == "march") {
                 var worksList = getDataMarch();
                 var aprilList = getList(worksList);
                 document.getElementById('marchWorkHighslide').innerHTML = aprilList;
             }
         }
 
-        function getList(worksList)//формирование списка справа
-        {            
-            var stroka = "<h3>Описание работы</h3><p>";
+        function getList(worksList)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+        {
+            var stroka = "<h3>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</h3><p>";
 
             $.each(worksList.data, function (index) {
 
-                stroka += "<b>Центр:</b> " + worksList.data[index].name + "<br/>";
-                stroka += "<b>Дата:</b> " + worksList.data[index].date + "<br/>";
-                stroka += "<b>Адрес:</b> " + worksList.data[index].position + "<br/>";
-                stroka += "<b>Пациент:</b> " + worksList.data[index].patient + "<br/>";
-                stroka += "<b>Дух пространства:</b> " + worksList.data[index].spiritOfSpace + "<br/>";
-                stroka += "<b>Особенности работы:</b> " + worksList.data[index].FeaturesOf + "<br/>";
-                stroka += "<b>Результат во времени:</b> " + worksList.data[index].ResultInTime + "<br/><br/>";
+                stroka += "<b>пїЅпїЅпїЅпїЅпїЅ:</b> " + worksList.data[index].name + "<br/>";
+                stroka += "<b>пїЅпїЅпїЅпїЅ:</b> " + worksList.data[index].date + "<br/>";
+                stroka += "<b>пїЅпїЅпїЅпїЅпїЅ:</b> " + worksList.data[index].position + "<br/>";
+                stroka += "<b>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</b> " + worksList.data[index].patient + "<br/>";
+                stroka += "<b>пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</b> " + worksList.data[index].spiritOfSpace + "<br/>";
+                stroka += "<b>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</b> " + worksList.data[index].FeaturesOf + "<br/>";
+                stroka += "<b>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</b> " + worksList.data[index].ResultInTime + "<br/><br/>";
             });
 
             return stroka;
         }
 
-        function updateMap(subject)
-        {
-            if (subject == "april")
-            {                
-                var aprilWork = getDataApril();                
+        function updateMap(subject) {
+            if (subject == "april") {
+                var aprilWork = getDataApril();
                 updatePlaceMark(aprilWork);
-                
+
             }
-            else if (subject == "march")
-            {                
+            else if (subject == "march") {
                 var marchWorks = getDataMarch();
-                updatePlaceMark(marchWorks);                
+                updatePlaceMark(marchWorks);
             }
         }
 
-        function updatePlaceMark(workMarks)
-        {
+        function updatePlaceMark(workMarks) {
             myCollection.removeAll();
             myCollection = new ymaps.GeoObjectCollection();
 
             $.each(workMarks.data, function (index) {
 
                 myPlacemark = new ymaps.Placemark([workMarks.data[index].Lat, workMarks.data[index].Lon],
-                            {
-                                name: workMarks.data[index].name,
-                                date: workMarks.data[index].date,
-                                position: workMarks.data[index].position,
-                                patient: workMarks.data[index].patient,
-                                spiritOfSpace: workMarks.data[index].spiritOfSpace,
-                                FeaturesOf: workMarks.data[index].FeaturesOf,
-                                ResultInTime: workMarks.data[index].ResultInTime
-                            },
-                            {
-                                preset: workMarks.data[index].color
-                            });
+                    {
+                        name: workMarks.data[index].name,
+                        date: workMarks.data[index].date,
+                        position: workMarks.data[index].position,
+                        patient: workMarks.data[index].patient,
+                        spiritOfSpace: workMarks.data[index].spiritOfSpace,
+                        FeaturesOf: workMarks.data[index].FeaturesOf,
+                        ResultInTime: workMarks.data[index].ResultInTime
+                    },
+                    {
+                        preset: workMarks.data[index].color
+                    });
 
                 myCollection.add(myPlacemark);
             });
@@ -164,35 +162,40 @@
             myMap.geoObjects.add(myCollection);
         }
 
-        function initTemplateBaloon()
-        {
+        function initTemplateBaloon() {
             var tempBalloonLayout = ymaps.templateLayoutFactory.createClass(
-                '<h3>Центр $[properties.name]</h3>' +
-                '<p><strong>Дата:</strong> $[properties.date]</p>' +
-                '<p><strong>Адрес:</strong> $[properties.position]</p>' +
-                '<p><strong>Пациент:</strong> $[properties.patient]</p>' +
-                '<p><strong>Дух пространства:</strong> $[properties.spiritOfSpace]</p>' +
-                '<p><small><strong>Особенности работы:</strong> $[properties.FeaturesOf]</small></p>' +
-                '<p><small><strong>Результат во времени:</strong> $[properties.ResultInTime]</small></p>'
+                '<h3>пїЅпїЅпїЅпїЅпїЅ $[properties.name]</h3>' +
+                '<p><strong>пїЅпїЅпїЅпїЅ:</strong> $[properties.date]</p>' +
+                '<p><strong>пїЅпїЅпїЅпїЅпїЅ:</strong> $[properties.position]</p>' +
+                '<p><strong>пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</strong> $[properties.patient]</p>' +
+                '<p><strong>пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</strong> $[properties.spiritOfSpace]</p>' +
+                '<p><small><strong>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ:</strong> $[properties.FeaturesOf]</small></p>' +
+                '<p><small><strong>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ:</strong> $[properties.ResultInTime]</small></p>'
             );
             return tempBalloonLayout;
         }        
     </script>
 </head>
-<body>
-    <div class="header"><center><h2>Школа альтернативной психологии. Работа с пространством.<h2><center></div>
-    <div id="map" class="yanmap"></div>
-    <div id="controlTime">      
-      <a href="#" onclick="updateMap('march')">Март 2013</a>&nbsp;&nbsp;&nbsp;
-      <a href="#" onclick="updateList('march'); return hs.htmlExpand(this)">Список</a>
-      <div class="highslide-maincontent" id="marchWorkHighslide">	          
-      </div><br/>
 
-      <a href="#" onclick="updateMap('april')">Апрель 2013</a>&nbsp;&nbsp;&nbsp;
-      <a href="#" onclick="updateList('april');return hs.htmlExpand(this)">Список</a>
-      <div class="highslide-maincontent" id="aprilWorkHighslide">
-	  <h3>Описание работы</h3>      
-      </div><br/>      
+<body>
+    <div class="header">
+        <center>
+            <h2>пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.<h2>
+                    <center>
+    </div>
+    <div id="map" class="yanmap"></div>
+    <div id="controlTime">
+        <a href="#" onclick="updateMap('march')">пїЅпїЅпїЅпїЅ 2013</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" onclick="updateList('march'); return hs.htmlExpand(this)">пїЅпїЅпїЅпїЅпїЅпїЅ</a>
+        <div class="highslide-maincontent" id="marchWorkHighslide">
+        </div><br />
+
+        <a href="#" onclick="updateMap('april')">пїЅпїЅпїЅпїЅпїЅпїЅ 2013</a>&nbsp;&nbsp;&nbsp;
+        <a href="#" onclick="updateList('april');return hs.htmlExpand(this)">пїЅпїЅпїЅпїЅпїЅпїЅ</a>
+        <div class="highslide-maincontent" id="aprilWorkHighslide">
+            <h3>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</h3>
+        </div><br />
     </div>
 </body>
+
 </html>
