@@ -1,52 +1,50 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <title>Школа Альтернативной Психологии. Работа с пространством.</title>
     <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
 
     <style type="text/css">
-      body {
-        width:100%;
-        height:100%;
-        background-color:white;
-        margin: -10px 0 0 0
-      }
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            margin: -10px 0 0 0
+        }
 
-      .float {
-        min-height:100%;
-        background-color:White;
-        position:relative;
-      }
-      
-      .header {
-        width: 100%;
-        height: 40px;
-        background-color: #cfe2f3;
-     }
+        .float {
+            min-height: 100%;
+            background-color: White;
+            position: relative;
+        }
 
-     .yanmap
-     {
-       position: relative;
-       height:650px;
-      }
+        .header {
+            width: 100%;
+            height: 40px;
+            background-color: #cfe2f3;
+        }
 
-        #controlTime
-		{
-		    position:fixed;
-		    margin:0px 0 0 0;
-		    display: block;
-		    top:  55px;
-		    right: 5px;
-  			padding: 0.2em;
-	   		background-color: rgba(230, 250, 253, 0.8);
-		  	border-radius: 7px;
-			  -webkit-box-shadow:0 0 10px #aaa;
-	      -moz-box-shadow:0 0 10px #aaa;
-	      box-shadow:0 0 10px #aaa;
-	      z-index:2;
-		}
-      
+        .yanmap {
+            position: relative;
+            height: 650px;
+        }
+
+        #controlTime {
+            position: fixed;
+            margin: 0px 0 0 0;
+            display: block;
+            top: 55px;
+            right: 5px;
+            padding: 0.2em;
+            background-color: rgba(230, 250, 253, 0.8);
+            border-radius: 7px;
+            -webkit-box-shadow: 0 0 10px #aaa;
+            -moz-box-shadow: 0 0 10px #aaa;
+            box-shadow: 0 0 10px #aaa;
+            z-index: 2;
+        }
     </style>
     <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
     <script type="text/javascript">
@@ -60,30 +58,30 @@
             }),
 
                 myPlacemark = new ymaps.Placemark([55.76, 37.64],
-                {
-                    name: 'Седьмой Ключ',
-                    position: 'Работали вот здесь очень хорошо',
-                    population: 'Работа прошла успешно'
-                });
+                    {
+                        name: 'Седьмой Ключ',
+                        position: 'Работали вот здесь очень хорошо',
+                        population: 'Работа прошла успешно'
+                    });
 
-                myCollection = new ymaps.GeoObjectCollection();
+            myCollection = new ymaps.GeoObjectCollection();
 
-                myCollection.add(myPlacemark);
+            myCollection.add(myPlacemark);
 
-                var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
+            var myBalloonLayout = ymaps.templateLayoutFactory.createClass(
                 '<h3>$[properties.name]</h3>' +
                 '<p><strong>Описание:</strong> $[properties.position]</p>' +
                 '<p><small><strong>Результат:</strong> $[properties.population]</small></p>'
             );
 
-                ymaps.layout.storage.add('my#superlayout', myBalloonLayout);
+            ymaps.layout.storage.add('my#superlayout', myBalloonLayout);
 
-                myCollection.options.set({
-                    balloonContentBodyLayout: 'my#superlayout',
-                    balloonMaxWidth: 300
-                });
+            myCollection.options.set({
+                balloonContentBodyLayout: 'my#superlayout',
+                balloonMaxWidth: 300
+            });
 
-                myMap.geoObjects.add(myCollection);
+            myMap.geoObjects.add(myCollection);
 
         }
     </script>
@@ -91,13 +89,17 @@
 
 <body>
 
-    <div class="header"><center><h2>Школа альтернативной психологии. Работа с пространством.<h2><center></div>
+    <div class="header">
+        <center>
+            <h2>Школа альтернативной психологии. Работа с пространством.<h2>
+                    <center>
+    </div>
     <div id="map" class="yanmap"></div>
     <div id="controlTime" width="200">
-      <a href="#"> Работа за весь период</a><br/>
-      <a href="#"> Март 2013</a><br/>
-      <a href="#"> Апрель 2013</a><br/>
-      <a href="#"> Май 2013</a><br/>
+        <a href="#"> Работа за весь период</a><br />
+        <a href="#"> Март 2013</a><br />
+        <a href="#"> Апрель 2013</a><br />
+        <a href="#"> Май 2013</a><br />
     </div>
 
 </body>

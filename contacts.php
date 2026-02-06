@@ -154,14 +154,24 @@
 <!-- end page -->
 <!-- start footer -->
 <div id="footer">
-	<div id="footer-wrap">
-  <table><tr height="42"><td width="850">
-	  <center><p id="legal">(c) 2011-2025 Design by DVV </p></center>
-	</td></tr>
-	</table>
+		<div id="footer-wrap">
+			<table>
+				<tr height="42">
+					<td width="850">
+						<center>
+							<p id="legal">(c) 2011-<span id="current-year"></span> Design by DVV</p>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
-</div>
-<!-- end footer -->
+	<!-- end footer -->	 
+
+	<script>    
+    	const currentYear = new Date().getFullYear();    
+    	document.getElementById('current-year').textContent = currentYear;
+	</script>
 </body>
 </html>
 </div>
