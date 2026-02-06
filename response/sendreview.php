@@ -6,7 +6,7 @@
 <title>OOО "Центр Альтернативной Психологии "Седьмой ключ"</title>
 <meta name="keywords" content="седьмой,ключ,альтернативная,психология,путь,счастью,счастье" />
 <meta name="description" content="седьмой ключ" />
-<meta property="og:title" content="Санкт-Петербургский Центр Альтернативной Психологии Седьмой ключ/>
+<meta property="og:title" content="Санкт-Петербургский Центр Альтернативной Психологии Седьмой ключ"/>
 <meta property="og:url" content="http://www.seventhkey.ru/"/>
 <meta property="og:description" content="седьмой ключ"/>
 <link href="../default.css" rel="stylesheet" type="text/css" />
@@ -162,13 +162,23 @@
 <!-- end page -->
 <!-- start footer -->
 <div id="footer">
-	<div id="footer-wrap">
-  <table><tr height="42"><td width="850">
-	  <center><p id="legal">(c) 2011-2025 Design by DVV </p></center>
-	</td></tr>
-	</table>
+		<div id="footer-wrap">
+			<table>
+				<tr height="42">
+					<td width="850">
+						<center>
+							<p id="legal">(c) 2011-<span id="current-year"></span> Design by DVV</p>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
-</div>
-<!-- end footer -->
+	<!-- end footer -->
+
+	<script>
+		const currentYear = new Date().getFullYear();
+		document.getElementById('current-year').textContent = currentYear;
+	</script>
 </body>
 </html>
