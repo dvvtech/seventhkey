@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Поиск - Седьмой ключ</title>
+	<link rel="icon" href="images/logo2_1.png">
+	<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="news.html">Новости и события</a></li>
+				<li><a href="about.html">О нашем центре</a></li>
+				<li><a href="articles/main.html">Статьи</a></li>
+				<li><a href="harmonizers.html">Гармонизаторы</a></li>
+				<li><a href="poetry.html">Творчество</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="logo-wrap">
+		<div id="logo"></div>
+	</div>
+
+	<div id="page">
+		<div id="content" class="search-content">
+			<div class="post">
+				<h2>Результаты поиска</h2>
+				<div class="entry">
+					<div id="search-status">Загрузка...</div>
+					<div id="search-results"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2>Ключ к счастью</h2>
+					<h3></h3>
+
+					<br />
+					<h2>Поиск</h2>
+					<form id="search-form" action="search.html" method="get">
+						<input type="text" name="q" id="search-input" placeholder="Поиск по сайту..." />
+						<button type="submit" id="search-btn">Найти</button>
+					</form>
+					<br />
+
+					<h2>Информация</h2>
+					<ul>
+						<li><a href="response/people1.html">Отзывы пациентов</a></li>
+						<li><a href="response/scientific.html">Отзывы ученых</a></li>
+						<li><a href="partners.html">Партнеры</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+
+	<div id="footer">
+		<div id="footer-wrap">
+			<table>
+				<tr height="42">
+					<td width="850">
+						<center>
+							<p id="legal">(c) 2011-<span id="current-year"></span> Design by DVV</p>
+						</center>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById('current-year').textContent = new Date().getFullYear();
+
+		(function () {
+			var params = new URLSearchParams(window.location.search);
+			var query = params.get('q') || '';
+			var searchInput = document.getElementById('search-input');
+			var statusEl = document.getElementById('search-status');
+			var resultsEl = document.getElementById('search-results');
+
+			if (searchInput) searchInput.value = query;
+
+			if (!query.trim()) {
+				statusEl.textContent = 'Введите поисковый запрос.';
+				return;
+			}
+
+			var url = 'https://api.cloud-platform.pro/searchhub/search?q=' + encodeURIComponent(query) + '&limit=20';
+
+			fetch(url)
+				.then(function (res) {
+					if (!res.ok) throw new Error('Ошибка сервера: ' + res.status);
+					return res.json();
+				})
+				.then(function (data) {
+					var results = data.results || [];
+					var total = data.total || 0;
+
+					if (results.length === 0) {
+						statusEl.textContent = 'По запросу «' + query + '» ничего не найдено.';
+						return;
+					}
+
+					statusEl.textContent = 'Найдено результатов: ' + total;
+
+					var html = '';
+					for (var i = 0; i < results.length; i++) {
+						var r = results[i];
+						html += '<div class="search-result-item">';
+						html += '<h3><a href="' + r.url + '">' + (r.title || r.url) + '</a></h3>';
+						if (r.snippet) {
+							html += '<p class="search-snippet">' + r.snippet + '</p>';
+						}
+						html += '<p class="search-url">' + r.url + '</p>';
+						html += '</div>';
+					}
+					resultsEl.innerHTML = html;
+				})
+				.catch(function (err) {
+					statusEl.textContent = 'Произошла ошибка при поиске. Попробуйте позже.';
+				});
+		})();
+	</script>
+</body>
+
+</html>
