@@ -30,6 +30,7 @@
 		<div id="content" class="search-content">
 			<div class="post">
 				<h2>Результаты поиска</h2>
+				<br />
 				<div class="entry">
 					<div id="search-status">Загрузка...</div>
 					<div id="search-results"></div>
@@ -96,7 +97,7 @@
 				return;
 			}
 
-			var url = 'https://api.cloud-platform.pro/searchhub/search?q=' + encodeURIComponent(query) + '&limit=20';
+			var url = 'https://api.cloud-platform.pro/searchhub/search?q=' + encodeURIComponent(query) + '&siteId=1' + '&limit=20';
 
 			fetch(url)
 				.then(function (res) {
