@@ -133,6 +133,13 @@
 				<li>
 					<h2>Ключ к счастью</h2>
 					<h3></h3>
+					<br />
+					<h2>Поиск</h2>
+					<form id="search-form" action="../search.html" method="get">
+						<input type="text" name="q" id="search-input" placeholder="Поиск по сайту..." />
+						<button type="submit" id="search-btn">Найти</button>
+					</form>
+					<br />
 					<h2>Информация</h2>
 					<ul>
 						<li><a href="../response/people1.html">Отзывы пациентов</a></li>
@@ -178,11 +185,11 @@
 			</table>
 		</div>
 	</div>
-	<!-- end footer -->	 
+	<!-- end footer -->
 
-	<script>    
-    	const currentYear = new Date().getFullYear();    
-    	document.getElementById('current-year').textContent = currentYear;
+	<script>
+		const currentYear = new Date().getFullYear();
+		document.getElementById('current-year').textContent = currentYear;
 	</script>
 </body>
 
