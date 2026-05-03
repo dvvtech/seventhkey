@@ -7,7 +7,7 @@
 	<link rel="icon" href="images/logo2_1.png">
 	<meta name="keywords" content="седьмой,ключ,альтернативная,психология,путь,счастью,счастье" />
 	<meta name="description" content="седьмой ключ" />
-	<meta property="og:title" content="Санкт-Петербургский Центр Альтернативной Психологии Седьмой ключ"/>
+	<meta property="og:title" content="Санкт-Петербургский Центр Альтернативной Психологии Седьмой ключ" />
 	<meta property=" og:url" content="http://www.seventhkey.ru/" />
 	<meta property="og:description" content="седьмой ключ" />
 	<script type="text/javascript" src="JScript6.js"></script>
@@ -199,6 +199,12 @@
 				<li>
 					<h2>Ключ к счастью</h2>
 					<h3></h3>
+					<br />
+					<form id="search-form" action="search.html" method="get">
+						<input type="text" name="q" id="search-input" placeholder="Поиск по сайту..." />
+						<button type="submit" id="search-btn">Найти</button>
+					</form>
+					<br />
 					<h2>Информация</h2>
 					<ul>
 						<li><a href="response/people1.html">Отзывы пациентов</a></li>
@@ -233,11 +239,11 @@
 			</table>
 		</div>
 	</div>
-	<!-- end footer -->	 
+	<!-- end footer -->
 
-	<script>    
-    	const currentYear = new Date().getFullYear();    
-    	document.getElementById('current-year').textContent = currentYear;
+	<script>
+		const currentYear = new Date().getFullYear();
+		document.getElementById('current-year').textContent = currentYear;
 	</script>
 </body>
 

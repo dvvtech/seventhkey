@@ -165,6 +165,12 @@
         <li>
           <h2>Ключ к счастью</h2>
           <h3></h3>
+          <br />
+          <form id="search-form" action="search.html" method="get">
+            <input type="text" name="q" id="search-input" placeholder="Поиск по сайту..." />
+            <button type="submit" id="search-btn">Найти</button>
+          </form>
+          <br />
           <h2>Информация</h2>
           <ul>
             <li><a href="response/people1.html">Отзывы пациентов</a></li>
@@ -191,24 +197,24 @@
   <!-- end page -->
   <!-- start footer -->
   <div id="footer">
-		<div id="footer-wrap">
-			<table>
-				<tr height="42">
-					<td width="850">
-						<center>
-							<p id="legal">(c) 2011-<span id="current-year"></span> Design by DVV</p>
-						</center>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-	<!-- end footer -->	 
+    <div id="footer-wrap">
+      <table>
+        <tr height="42">
+          <td width="850">
+            <center>
+              <p id="legal">(c) 2011-<span id="current-year"></span> Design by DVV</p>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- end footer -->
 
-	<script>    
-    	const currentYear = new Date().getFullYear();    
-    	document.getElementById('current-year').textContent = currentYear;
-	</script>
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById('current-year').textContent = currentYear;
+  </script>
 </body>
 
 </html>
