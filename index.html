@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>OOО "Центр Альтернативной Психологии "Седьмой ключ"</title>
 	<link rel="icon" href="images/logo2_1.png">
 	<meta name="keywords" content="седьмой,ключ,альтернативная,психология,путь,счастью,счастье" />
@@ -182,110 +182,286 @@
 
 					<br /><br /><br /><br />
 
-					<center><img src="../gallery/article/fpm_2020.jpg" width="300" alt='Седьмой ключ' /></center>
-					<br />
-					<center>
-						<h1 style="color:red">8 Марта</h1>
-					</center><br />
+					<style>
+					.lang-switcher { text-align: center; margin: 20px 0; }
+					.lang-btn { display: inline-block; margin: 0 8px; cursor: pointer; font-size: 36px; opacity: 0.4; transition: opacity 0.3s; border: none; background: none; padding: 5px; line-height: 1; vertical-align: middle; }
+					.lang-btn:hover { opacity: 0.8; }
+					.lang-btn.active { opacity: 1; }
+					.lang-content { display: none; }
+					</style>
 
-					<br />
+					<div class="lang-switcher">
+						<button class="lang-btn" onclick="switchLang('az',this)" title="Azərbaycan dili">🇦🇿</button>
+						<button class="lang-btn active" onclick="switchLang('ru',this)" title="Русский">🇷🇺</button>
+						<button class="lang-btn" onclick="switchLang('en',this)" title="English">🇬🇧</button>
+					</div>
 
-					<center style="color:black">
-						<p>
-							Дорогие, родные, милые, уважаемые, любимые женщины!<br />
+					<script>
+					function switchLang(lang, btn) {
+						var contents = document.querySelectorAll('.lang-content');
+						for (var i = 0; i < contents.length; i++) {
+							contents[i].style.display = 'none';
+						}
+						document.getElementById('lang-' + lang).style.display = 'block';
+						var btns = document.querySelectorAll('.lang-btn');
+						for (var i = 0; i < btns.length; i++) {
+							btns[i].classList.remove('active');
+						}
+						btn.classList.add('active');
+					}
+					</script>
 
-							Матери, дочери, сестры, подруги!<br />
-							Вас поздравляем с праздником весны,<br />
-							С дыханием новым рек и блеском солнца!<br />
-							Пусть будут ваши дни блаженны и ясны.<br />
-							И утро пусть заглянет к вам в оконце.<br />
-							Пусть будет пробуждением души<br />
-							Хмельное воскресение природы!<br />
-							И будьте вы всегда так хороши,<br />
-							Как нежное сиянье небосвода.<br />
-					</center>
-
-					<center style="color:black">
-						<p>
-							Благословенна Женщина — удивительное создание Божье! Такая слабая в
-							сравнении с мужчиной, но крепкая Духом и любовью, верностью и преданностью,
-							красотой и грациозностью, гибкая, легкая, изящная, мудрая, умная, нежная....
-							Она более всего радуется даже не тому, что её любят, а что любит сама, не тому,
-							что ей дарят подарки, а она сама настоящий подарок для своей семьи, друзей,
-							близких.
-					</center>
-
-					<center style="color:black">
-						<p>
-							И пусть будут благословенны женские нежные руки, которые ласково обнимают,
-							исцеляют, укрепляют, защищают от бед и напастей — эти руки натруженные,
-							моющие, стирающие, зарабатывающие на хлеб насущный, оберегающие своих
-							детей и мужей!
-					</center>
-
-					<center style="color:black">
-						<p>
-							Благословенно Великое Сердце Женщины, которое умеет любить не за что-то, а
-							не смотря ни на что!<br />
-							И пусть вас, милые женщины, не смущают с годами появляющиеся морщинки.<br />
-							Это лучики радости и сострадания вашей Души.<br />
-							Дай вам Бог счастья, долголетия, любви и вдохновения!<br />
-							И весны !!!
-					</center>
-
-					<br />
-					<center>
-						<h3 style="color:blue" class="mycenter">ФП ВЕСНЫ "Руки-Голуби"</h3><br />
-						<div class="mycenter">
-							<img width="300" src="../images/pp2.jpg" alt="" />
-						</div>
-					</center>
-					<br />
-
-					<center style="color:black">
-						<p>
-							В Международный женский день 8 марта 2026 года академик Яшар Ибадов
-							провёл подарочный благотворительный сеанс для всех женщин планеты, для представительниц
-							прекрасного пола,
-							принимающих участие в работе по ФП Материнство.
-					</center>
-					</p>
-					<p>
+					<div class="lang-content" id="lang-az">
+						<center>
+							<h3>Canlı Sistemlərin Sağlam Gələcəyi Naminə:</h3>
+							<h3>Funksional Vəziyyət və Endoekologiya</h3>
+						</center>
+						<br />
 						<center style="color:black">
 							<p>
-								Коррекция шла по Фазовому портрету Весны, который был создан 8 марта 2019
-								года, 7 лет назад. Фазовый портрет Весны явлен в результате многолетней
-								коррекционной работы с ФП «Материнство» именно 8 Марта — в праздничный день
-								для всей Земли, всего Человечества. Эта работа – благословение всему Человечеству
-								на новый Путь — Путь Радости. <br />
-								<a href="https://seventhkey.ru/articles/springPhasePortrait.html">Читать далее</a>
+								Beynəlxalq Ekoenergetika Akademiyasının "Tibbi biologiya və Ekologiya" Departamenti – həyat elmlərinin kəsişməsində yerləşən, insan sağlamlığı, biomüxtəliflik, ekosistemlərin qorunması və biomühitdəki dəyişikliklərin orqanizmlərə təsirini öyrənən multidissiplinar bir struktur bölmədir. Departament həm tədris, tədqiqat, həm də ictimai maarifləndirmə sahələrində fəaliyyət göstərir. Departamentin direktoru İbadov Yaşar Saday oğlu "Alternativ Psixologiya" elminin müəllifi, Tibbi biologiya elmlər doktoru, professor, Oksford Birləşmiş Akademiyasının akademiki, Birləsmiş Akademiyada fəaliyyət göstərən "Alternativ Psixologiya" Departamentinin rəhbəri, BEA-nın vitse-prezidenti, Avropa Tibb Assosiasiyasının (EMA) Azərbaycandakı rəsmi nümayəndəsidir.
+							</p>
+							<p>
+								Departamentin xətti ilə mövcud ekoloji problemlərin həlli istiqamətində "Alternativ Psixologiya" elminin metodologiyasının praktik tətbiqinə həsr olunmuş:
+							</p>
+							<p>
+								- "Tibb və Təhsildə Birgə İnteqrasiya"; Ekologiyanın psixologiya elmi ilə qarşılıqlı əlaqəsi";<br />
+								- "İnsan və ekoloji mühit: sağlam gələcəyin açarıdır";<br />
+								- "Alternativ Psixologiya elminin insanların tibbi-psixoloji sağlamlığının qorunmasında dünya təbabətinə gətirdiyi elmi yeniliklər";<br />
+								- "Erkən Uşaq inkişafında Alternativ Psixologiya elminin metodlarının tətbiqi və əhəmiyyəti";<br />
+								- "Sağlam gənclik, Sağlam gələcək" mövzularında prezentasiyalar, "dəyirmi masa"lar, elmi görüşlər keçirilmişdir.
+							</p>
+							<p>
+								"Funksional vəziyyətin tənzimlənməsi və onun canlı sistemlərin endoekologiyasının yaxşılaşdırılmasında rolu" mövzusunda keçirilən Beynəlxalq konfransın əsas qayəsi - İnsana özü-özünün xilaskarı olduğunu anlatmaq, onun mənəvi cəhətdən zəngin, dəyərli bir şəxsiyyət kimi formalaşmasına kömək etmək, sağlam gənc nəslin formalaşdırılması, onların ekoloji biliklərinin inkişaf etdirilməsinə nail olmaqdır.
+							</p>
+							<p>
+								Canlı sistemlərin funksional vəziyyətinin tənzimlənməsi müasir biologiya, tibb, ekologiya və biofizika elmlərinin ən aktual istiqamətlərindən biri hesab olunur. İnsan orqanizminin və digər canlı sistemlərin daxili ekoloji mühitinin qorunması, fizioloji proseslərin sabit saxlanılması və sağlam həyat fəaliyyətinin təmin edilməsi elmi tədqiqatların əsas prioritet sahələrindəndir. Bu baxımdan "Funksional vəziyyətin tənzimlənməsi və onun canlı sistemlərin endoekologiyasının yaxşılaşdırılmasında rolu" mövzusunda keçirilən Beynəlxalq Konfrans xüsusi elmi əhəmiyyətə malikdir.
+							</p>
+							<p>
+								Konfransın əsas məqsədi funksional vəziyyətin idarə olunması, orqanizmin adaptasiya imkanlarının artırılması, daxili ekoloji tarazlığın qorunması və sağlamlığın yaxşılaşdırılması istiqamətində aparılan müasir elmi araşdırmaların müzakirəsi olmuşdur. Tədbirdə müxtəlif ölkələrdən alimlər, tədqiqatçılar, həkimlər və mütəxəssislər iştirak edərək canlı sistemlərin funksional vəziyyətinin bərpası və optimallaşdırılması sahəsində yeni yanaşmaları təqdim etmişlər.
+							</p>
+							<p>
+								Konfransın təqdimatçısı akademik Yaşar Saday oğlu İbadov çıxışında funksional vəziyyətin tənzimlənməsinin nəzəri və praktik aspektlərini geniş şəkildə izah etmiş, canlı sistemlərin endoekologiyasının yaxşılaşdırılmasının insan sağlamlığının qorunmasında mühüm rol oynadığını vurğulamışdır. Akademik Yaşar İbadov qeyd etmişdir ki, orqanizmin daxili mühitinin ekoloji tarazlığı pozulduqda müxtəlif funksional və xroniki xəstəliklərin yaranma riski artır. Bu səbəbdən funksional vəziyyətin vaxtında diaqnostikası və düzgün tənzimlənməsi müasir tibbin əsas istiqamətlərindən biri kimi qiymətləndirilməlidir.
+							</p>
+							<p>
+								Tədbir çərçivəsində bioenergetika, funksional diaqnostika, bioloji sistemlərin adaptasiya mexanizmləri, stress faktorlarının canlı sistemlərə təsiri, eləcə də endoekoloji mühitin sağlamlaşdırılması yolları barədə elmi məruzələr dinlənilmişdir. İştirakçılar arasında aparılan müzakirələr yeni elmi əməkdaşlıqların qurulmasına və gələcək birgə tədqiqatların həyata keçirilməsinə zəmin yaratmışdır.
+							</p>
+							<p>
+								Konfransın yekununda vurğulanmışdır ki, funksional vəziyyətin tənzimlənməsi yalnız tibbi deyil, həm də ekoloji və sosial baxımdan mühüm əhəmiyyət daşıyır. Müasir dövrdə insan sağlamlığının qorunması üçün canlı sistemlərin daxili ekoloji sabitliyinin təmin olunması vacib şərtlərdən biridir. Beynəlxalq Konfrans elmi biliklərin mübadiləsi, innovativ yanaşmaların təqdimatı və multidissiplinar əməkdaşlığın inkişafı baxımından mühüm platforma olmuşdur.
+							</p>
 						</center>
-					</p>
+						<br />
+						<center><h3>Konfransda səsləndirilən əsas məruzələr</h3></center>
+						<center style="color:black">
+							<p>
+								Konfrans çərçivəsində müxtəlif ölkələri təmsil edən alim və mütəxəssislər tərəfindən aşağıdakı mövzularda məruzələr təqdim edilmişdir:
+							</p>
+							<p>
+								Lada İvanovna Litvinova (Rusiya) – "Konfrans iştirakçılarına və qonaqlarına xoş gəlmisiniz. Layihənin qısa təqdimatı". Avropa Tibb Assosiasiyasının Şərqi və Cənubi Avropa və Mərkəzi Asiya üzrə nümayəndəsi, işgüzar əməkdaşlıq proqramının təşəbbüskarı və direktoru.
+							</p>
+							<p>
+								Yaşar İbadov (Azərbaycan) – "Hərəkət istiqamətinin keyfiyyət nəzəriyyəsi. Vektor vasitəsilə keyfiyyətin təzahürünün məkan-dinamik prinsipi". Tibb və biologiya elmləri doktoru, "Alternativ psixologiya" elminin müəllifi, BEA-nın vitse-prezidenti və Tibbi Biologiya və Ekologiya Departamentinin direktoru.
+							</p>
+							<p>
+								Andrey Smirnov (Rusiya) – "İnsanın təkamül inkişafının yeni texnologiyaları". Psixologiya üzrə fəlsəfə doktoru, professor.
+							</p>
+							<p>
+								Yuri Martsinişin (Ukrayna–Çexiya) – "Astral dünyanın kvant dalğaları, enerji-informasiya və transsendental səviyyələri və təbiətin təkamül və reaktiv sahələri arasında kvant keçid mexanizmləri". Akademik, tədqiqatçı alim, tamamlayıcı tibb və naturopatiya üzrə tibb elmləri doktoru, ekologiya, inkişaf və psixologiya üzrə elmlər doktoru.
+							</p>
+							<p>
+								Elena Roslikova (Rusiya) – "Volqoqraddan nümunə götürməklə 'Şəhər' sosial-ekoloji sisteminin faza vəziyyətinin korreksiyası üçün alternativ psixologiya üsullarının tətbiqi". Beynəlxalq Alternativ Psixologiya Məktəbinin nümayəndəsi, Volqoqrad Sosial-Ekoloji Mərkəzinin direktoru, psixoqraf, ekoloq və psixoloq.
+							</p>
+							<p>
+								Natalia Stepanovna Fir (Ukrayna) – "Psixologiya – Güvən Məkanı". Təbiət və tamamlayıcı tibb elmləri doktoru, tibb elmləri namizədi, Oksford Akademik İttifaqının fəxri professoru.
+							</p>
+							<p>
+								Olqa Vladimirovna Kovaleva (Ukrayna) – "Arterial hipertoniya və miofasiyal sindromlu xəstələr üçün kompleks fiziki terapiya proqramı". Tibb elmləri namizədi, dosent, Zaporijjya Milli Politexnik Universitetinin Fiziki terapiya və əmək terapiyası kafedrasının müdiri.
+							</p>
+							<p>
+								Mətanət Tarverdiyeva (Türkiyə) – "Alternativ psixologiya metodologiyalarının konservativ müalicə və inkişaf perspektivləri ilə birgə inteqrativ tətbiqi". Həkim və beynəlxalq tibb mütəxəssisi.
+							</p>
+							<p>
+								İradə Gülmalı Hacıyeva (Azərbaycan) – "Onurğa təbabəti və reabilitasiyasının inkişafında müasir nailiyyətlər və beynəlxalq təcrübə". Professor, Avropa Tibb Assosiasiyasının fəxri professoru, Vertebra Onurğa Tibb Mərkəzinin direktoru.
+							</p>
+							<p>
+								Yaşarqızı Cəmilə (Azərbaycan) – "Alternativ psixologiya metodologiyasının ənənəvi psixologiyaya gətirdiyi innovasiyalar". Alternativ psixoloq və elmi tədqiqatçı.
+							</p>
+							<p>
+								Səidə Əliyeva (Azərbaycan) – "Alternativ psixologiya metodologiyasının qadınların partnyordan sonrakı fəaliyyət vəziyyətinin və həyat keyfiyyətinin yaxşılaşdırılmasında rolu". Tibb və psixologiya elmləri doktoru, ginekoloq.
+							</p>
+							<p>
+								Fərqanə Xaşımova (Azərbaycan) – "Art terapiya və alternativ psixologiya: psixikanın öyrənilməsində simvolik təhlilin inteqrasiyası". Alternativ psixoloq və elmi tədqiqatçı.
+							</p>
+							<p>
+								Rufanə Əlizadə (Azərbaycan) – "Alternativ Psixologiyanın Metodologiyasında Kosmosun Enerji-İnformasiya Diaqnostikası və Feng Shui ilə əlaqəsi". Alternativ psixologiya mütəxəssisi və Feng Shui üzrə tədqiqatçı.
+							</p>
+							<p>
+								Naidə Selyaxova (Rusiya) – "Alternativ Psixologiyanın metodologiyası və innovativ texnologiyaları əsasında gənc nəsildə yetkinlik mədəniyyətinin formalaşdırılması və uyğunlaşdırılması". Alternativ psixoloq və psixoqraf.
+							</p>
+							<p>
+								İlahə Əliyeva (Azərbaycan) – "Klinik kosmetologiyanın inkişafı və estetik üz korreksiyası istiqamətində Alternativ Psixologiyanın Metodologiyaları". Alternativ psixoloq, həkim və elmi tədqiqatçı.
+							</p>
+							<p>
+								Azər Hümmətov (Azərbaycan) – "Tiroid düyünlərin müalicəsində qeyri-cərrahi müalicə üsulları". Tibb üzrə fəlsəfə doktoru, Azərbaycan Tibb Universitetinin Tədris Cərrahiyyə Klinikasının cərrah-endokrinoloqu.
+							</p>
+							<p>
+								Konfrans çərçivəsində iştirakçılar arasında elmi-tədqiqat fəaliyyətinin genişləndirilməsi, beynəlxalq elmi əlaqələrin möhkəmləndirilməsi və birgə layihələrin həyata keçirilməsi məqsədilə Elmi Əməkdaşlıq Müqaviləsi imzalanmışdır. Müqavilə tərəflər arasında elm, təhsil, innovasiya və səhiyyə sahələrində təcrübə mübadiləsinin aparılmasını, birgə elmi araşdırmaların, konfransların, seminarların və digər akademik tədbirlərin təşkilini nəzərdə tutur. Bu əməkdaşlığın gələcəkdə yeni elmi nailiyyətlərin əldə olunmasına və beynəlxalq tərəfdaşlıq əlaqələrinin daha da inkişafına mühüm töhfə verəcəyi vurğulanmışdır.
+							</p>
+						</center>
+						<br />
+						<center>
+							<h3>Sağlam Gələcək Naminə!</h3>
+							<p>Gəlin birlikdə sağlamlığımızı, doğmalarımızı və dünyamızı qoruyaq!</p>
+						</center>
+					</div>
 
-					<br />
-					<center>
-						<img src="../images/bi.png" alt="" />
-					</center>
-					<br />
-					<p>
+					<div class="lang-content" id="lang-ru" style="display:block">
+						<center>
+							<h3>ВО ИМЯ ЗДОРОВОГО БУДУЩЕГО ЖИВЫХ СИСТЕМ:</h3>
+							<h3>ФУНКЦИОНАЛЬНОЕ СОСТОЯНИЕ И ЭНДОЭКОЛОГИЯ</h3>
+						</center>
+						<br />
 						<center style="color:black">
 							<p>
-								Улыбки нежный свет<br />
-								И гордый взгляд небесной чистоты,<br />
-								Гармония Стихий, спокойствие души!<br />
-								О, ангельским крылом глава укрыта.<br />
-								И бережно Судьба под Символом сокрыта.<br />
-								Душа и Разум — всё едино в ней.<br />
-								И ночи нет — сияет Божий день!<br />
+								Департамент «Медицинская биология и экология», действующий при Международной Экоэнергетической Академии, является междисциплинарным структурным подразделением, находящимся на пересечении наук о жизни. Департамент занимается изучением здоровья человека, биоразнообразия, охраны экосистем и влияния изменений биосреды на живые организмы. Он активно осуществляет деятельность в сфере образования, научных исследований и общественного просвещения.
+							</p>
+							<p>
+								Директором департамента является академик Яшар Садай оглы Ибадов — доктор медицинских и биологических наук, профессор, автор науки «Альтернативная психология», академик Оксфордской Объединённой Академии, руководитель Департамента «Альтернативная психология» Объединённой Академии и вице-президент Международной Экоэнергетической Академии, Официальный представитель Европейской медицинской ассоциации (EMA) в Азербайджане.
+							</p>
+							<p>
+								По инициативе департамента были проведены многочисленные международные конференции, круглые столы и научные встречи, посвящённые практическому применению методологии науки «Альтернативная психология» в решении современных экологических проблем:
+							</p>
+							<p>
+								• «Интеграция медицины и образования»<br />
+								• «Взаимосвязь экологии и психологии»<br />
+								• «Человек и окружающая среда — ключ к здоровому будущему»<br />
+								• «Научные инновации, внесённые альтернативной психологией в мировую медицину для сохранения медицинско-психологического здоровья человека»<br />
+								• «Применение и значение методов альтернативной психологии в раннем развитии ребёнка»<br />
+								• «Здоровая молодёжь — здоровое будущее»
+							</p>
+							<p>
+								Основная миссия Международной конференции «Регуляция функционального состояния и её роль в улучшении эндоэкологии живых систем» заключается в том, чтобы помочь человеку осознать собственный внутренний потенциал, способствовать формированию духовно богатой личности, воспитанию здорового молодого поколения и развитию экологического мышления.
+							</p>
+							<p>
+								Регуляция функционального состояния живых систем считается одним из наиболее актуальных направлений современной биологии, медицины, экологии и биофизики. Сохранение внутренней экологической среды организма человека и других живых систем, поддержание стабильности физиологических процессов и обеспечение здоровой жизнедеятельности являются приоритетными направлениями научных исследований.
+							</p>
+							<p>
+								Основной целью конференции стало обсуждение современных научных исследований, связанных с управлением функциональным состоянием организма, повышением адаптационных возможностей, сохранением внутреннего экологического баланса и укреплением здоровья человека. В мероприятии приняли участие учёные, исследователи, врачи и специалисты из различных стран мира, представившие новые подходы к восстановлению и оптимизации функционального состояния живых систем.
+							</p>
+							<p>
+								В своём выступлении академик Яшар Ибадов подробно осветил теоретические и практические аспекты регуляции функционального состояния, подчеркнув важную роль улучшения эндоэкологии в сохранении здоровья человека. Он отметил, что нарушение экологического равновесия внутренней среды организма повышает риск развития различных функциональных и хронических заболеваний. В связи с этим своевременная диагностика и правильная регуляция функционального состояния должны рассматриваться как одно из ключевых направлений современной медицины.
+							</p>
+							<p>
+								В рамках конференции были заслушаны научные доклады по биоэнергетике, функциональной диагностике, адаптационным механизмам биологических систем, влиянию стрессовых факторов на живые организмы, а также методам оздоровления эндоэкологической среды. Проведённые дискуссии способствовали развитию международного научного сотрудничества и созданию основы для будущих совместных исследований.
+							</p>
+							<p>
+								В заключение конференции было подчеркнуто, что регуляция функционального состояния имеет важное значение не только с медицинской, но и с экологической и социальной точек зрения. В современных условиях обеспечение внутренней экологической стабильности живых систем является одним из важнейших условий сохранения здоровья человека. Международная конференция стала значимой платформой для обмена научными знаниями, представления инновационных подходов и развития междисциплинарного сотрудничества.
+							</p>
 						</center>
-						<br /><br />
+						<br />
+						<center><h3>ОСНОВНЫЕ ДОКЛАДЫ, ПРЕДСТАВЛЕННЫЕ НА КОНФЕРЕНЦИИ</h3></center>
+						<center style="color:black">
+							<p>В рамках конференции учёные и специалисты из разных стран выступили с докладами по следующим темам:</p>
+							<p>Лада Ивановна Литвинова (Россия) — «Добро пожаловать участникам и гостям конференции. Краткая презентация проекта».</p>
+							<p>Яшар Ибадов (Азербайджан) — «Теория качества направления движения. Пространственно-динамический принцип проявления качества через вектор».</p>
+							<p>Андрей Смирнов (Россия) — «Новые технологии эволюционного развития человека».</p>
+							<p>Юрий Марцинишин (Украина–Чехия) — «Квантовые волны астрального мира, энергоинформационные и трансцендентальные уровни и механизмы квантовых переходов между эволюционными и реактивными полями природы».</p>
+							<p>Елена Росликова (Россия) — «Применение методов альтернативной психологии для коррекции фазового состояния социально-экологической системы "Город" на примере Волгограда».</p>
+							<p>Наталия Степановна Фир (Украина) — «Психология — пространство доверия».</p>
+							<p>Ольга Владимировна Ковалёва (Украина) — «Комплексная программа физической терапии для пациентов с артериальной гипертензией и миофасциальным синдромом».</p>
+							<p>Метанет Тарвердиева (Турция) — «Интегративное применение методологий альтернативной психологии совместно с консервативным лечением и перспективами развития».</p>
+							<p>Ирада Гюльмалы Гаджиева (Азербайджан) — «Современные достижения и международный опыт в развитии вертебрологии и реабилитации позвоночника».</p>
+							<p>Джамиля Яшаргызы (Азербайджан) — «Инновации, внесённые методологией альтернативной психологии в традиционную психологию».</p>
+							<p>Саида Алиева (Азербайджан) — «Роль методологии альтернативной психологии в улучшении функционального состояния и качества жизни женщин после расставания с партнёром».</p>
+							<p>Фаргана Хашимова (Азербайджан) — «Арт-терапия и альтернативная психология: интеграция символического анализа в изучении психики».</p>
+							<p>Руфана Ализаде (Азербайджан) — «Энергоинформационная диагностика космоса в методологии альтернативной психологии и её связь с Фэн-шуй».</p>
+							<p>Наида Селяхова (Россия) — «Формирование и адаптация культуры зрелости молодого поколения на основе методологии и инновационных технологий альтернативной психологии».</p>
+							<p>Илаха Алиева (Азербайджан) — «Методологии альтернативной психологии в развитии клинической косметологии и эстетической коррекции лица».</p>
+							<p>Азер Гумматов (Азербайджан) — «Нехирургические методы лечения узлов щитовидной железы».</p>
+							<p>
+								В рамках конференции было подписано Соглашение о научном сотрудничестве с целью расширения научно-исследовательской деятельности, укрепления международных научных связей и реализации совместных проектов. Соглашение предусматривает обмен опытом в области науки, образования, инноваций и здравоохранения, а также организацию совместных научных исследований, конференций, семинаров и других академических мероприятий.
+							</p>
+						</center>
+						<br />
+						<center>
+							<h3>Во имя здорового будущего!</h3>
+							<p>Давайте вместе сохранять наш мир, наших близких и наше здоровье!</p>
+						</center>
+					</div>
+
+					<div class="lang-content" id="lang-en">
+						<center>
+							<h3>FOR THE HEALTHY FUTURE OF LIVING SYSTEMS:</h3>
+							<h3>FUNCTIONAL STATE AND ENDOECOLOGY</h3>
+						</center>
+						<br />
 						<center style="color:black">
 							<p>
-								<i>Автор фазовых портретов: Яшар Садай оглы Ибадов</i><br />
-								<i>Автор текста и стихотворения: Росликова Елена Владимировна</i>
+								The Department of Medical Biology and Ecology operating under the International Ecoenergy Academy is a multidisciplinary structural division situated at the intersection of life sciences. The department studies human health, biodiversity, ecosystem protection, and the impact of environmental changes on living organisms. It actively operates in the fields of education, scientific research, and public awareness.
+							</p>
+							<p>
+								The Director of the Department is Academician Yashar Saday oglu Ibadov — Doctor of Medical and Biological Sciences, Professor, founder of the science of "Alternative Psychology," Academician of the Oxford United Academy, Head of the Department of Alternative Psychology within the United Academy, and Vice-President of the International Ecoenergy Academy, Official representative of the European Medical Association (EMA) in Azerbaijan.
+							</p>
+							<p>
+								Under the leadership of the Department, numerous conferences, round tables, and scientific meetings devoted to the practical application of the methodology of Alternative Psychology in solving current ecological problems have been organized on the following topics:
+							</p>
+							<p>
+								• "Integration in Medicine and Education"<br />
+								• "The Interrelation Between Ecology and Psychology"<br />
+								• "Human and Environment: The Key to a Healthy Future"<br />
+								• "Scientific Innovations Introduced to World Medicine by Alternative Psychology in Protecting Medical and Psychological Health"<br />
+								• "The Application and Importance of Alternative Psychology Methods in Early Childhood Development"<br />
+								• "Healthy Youth, Healthy Future"
+							</p>
+							<p>
+								The primary mission of the International Conferences entitled "Regulation of Functional State and Its Role in Improving the Endoecology of Living Systems" is to help individuals realize their inner potential, develop as spiritually rich and valuable personalities, contribute to the upbringing of a healthy younger generation, and promote ecological awareness.
+							</p>
+							<p>
+								The regulation of the functional state of living systems is considered one of the most relevant areas of modern biology, medicine, ecology, and biophysics. Preserving the internal ecological environment of the human organism and other living systems, maintaining physiological stability, and ensuring healthy life activity are among the main priorities of scientific research. In this regard, the International Conference dedicated to "Regulation of Functional State and Its Role in Improving the Endoecology of Living Systems" holds particular scientific significance.
+							</p>
+							<p>
+								The main objective of the conference was to discuss modern scientific research concerning functional state management, enhancement of adaptive capacities, preservation of internal ecological balance, and improvement of health conditions. Scientists, researchers, physicians, and specialists from different countries participated in the event and presented innovative approaches to the restoration and optimization of the functional state of living systems.
+							</p>
+							<p>
+								In his speech, Academician Yashar Saday oglu Ibadov thoroughly explained the theoretical and practical aspects of regulating functional states and emphasized the important role of improving endoecology in protecting human health. He noted that disturbances in the ecological balance of the organism's internal environment increase the risk of various functional and chronic diseases. Therefore, timely diagnostics and proper regulation of functional states should be regarded as one of the key priorities of modern medicine.
+							</p>
+							<p>
+								Within the framework of the conference, scientific reports were presented on bioenergetics, functional diagnostics, adaptation mechanisms of biological systems, the impact of stress factors on living organisms, and methods for improving the endoecological environment. The discussions among participants created a strong foundation for new scientific collaborations and future joint research projects.
+							</p>
+							<p>
+								At the conclusion of the conference, it was emphasized that the regulation of functional states is important not only from a medical perspective but also from ecological and social viewpoints. In the modern era, ensuring the internal ecological stability of living systems is one of the essential conditions for protecting human health. The International Conference became an important platform for the exchange of scientific knowledge, the presentation of innovative approaches, and the development of multidisciplinary cooperation.
+							</p>
 						</center>
-					</p>
-					</p>
+						<br />
+						<center><h3>MAIN PRESENTATIONS DELIVERED AT THE CONFERENCE</h3></center>
+						<center style="color:black">
+							<p>Within the framework of the conference, scientists and specialists representing various countries delivered presentations on the following topics:</p>
+							<p>Lada Litvinova (Russia) — "Welcome to the conference participants and guests. Brief presentation of the project."</p>
+							<p>Yashar Ibadov (Azerbaijan) — "Theory of Quality of Direction of Movement. The Spatial-Dynamic Principle of Quality Manifestation through Vector."</p>
+							<p>Andrey Smirnov (Russia) — "New Technologies of Human Evolutionary Development."</p>
+							<p>Yuri Martsinishin (Ukraine–Czech Republic) — "Quantum Waves of the Astral World, Energy-Informational and Transcendental Levels, and Quantum Transition Mechanisms Between Evolutionary and Reactive Fields of Nature."</p>
+							<p>Elena Roslikova (Russia) — "Application of Alternative Psychology Methods for Correcting the Phase State of the 'City' Socio-Ecological System Using Volgograd as an Example."</p>
+							<p>Natalia Fir (Ukraine) — "Psychology — The Space of Trust."</p>
+							<p>Olga Kovaleva (Ukraine) — "Comprehensive Physical Therapy Program for Patients with Arterial Hypertension and Myofascial Syndrome."</p>
+							<p>Matanat Tarverdiyeva (Türkiye) — "Integrative Application of Alternative Psychology Methodologies Together with Conservative Treatment and Development Perspectives."</p>
+							<p>Irada Gulmali Hajiyeva (Azerbaijan) — "Modern Achievements and International Experience in the Development of Spinal Medicine and Rehabilitation."</p>
+							<p>Jamila Yashargizi (Azerbaijan) — "Innovations Introduced by the Methodology of Alternative Psychology into Traditional Psychology."</p>
+							<p>Saida Aliyeva (Azerbaijan) — "The Role of Alternative Psychology Methodology in Improving Women's Functional State and Quality of Life After Partner Separation."</p>
+							<p>Fargana Hashimova (Azerbaijan) — "Art Therapy and Alternative Psychology: Integration of Symbolic Analysis in the Study of the Psyche."</p>
+							<p>Rufana Alizade (Azerbaijan) — "Energy-Informational Diagnostics of Space in the Methodology of Alternative Psychology and Its Relation to Feng Shui."</p>
+							<p>Naida Selyakhova (Russia) — "Formation and Adaptation of Maturity Culture in the Younger Generation Based on the Methodology and Innovative Technologies of Alternative Psychology."</p>
+							<p>Ilaha Aliyeva (Azerbaijan) — "Methodologies of Alternative Psychology in the Development of Clinical Cosmetology and Aesthetic Facial Correction."</p>
+							<p>Azer Hummatov (Azerbaijan) — "Non-Surgical Treatment Methods for Thyroid Nodules."</p>
+							<p>
+								Within the framework of the conference, a Scientific Cooperation Agreement was signed to expand scientific research activities, strengthen international scientific relations, and implement joint projects. The agreement envisages the exchange of experience in science, education, innovation, and healthcare, as well as the organization of joint scientific research, conferences, seminars, and other academic events. It was emphasized that this cooperation would make a significant contribution to future scientific achievements and the further development of international partnerships.
+							</p>
+						</center>
+						<br />
+						<center>
+							<h3>To a Healthy Future!</h3>
+							<p>Let us protect our world, our loved ones, and our health together!</p>
+						</center>
+					</div>
 
 
 					<!--<center><img src="images/2020/portrait.jpg" alt='Седьмой ключ' /></center>
